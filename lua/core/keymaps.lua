@@ -14,4 +14,7 @@ vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+
+-- copy the current file's path to the clipboard
+vim.keymap.set("n", "<leader>cp", ":let @+ = expand('%:~:.')<CR>", { desc = "[C]opy [P]ath" })

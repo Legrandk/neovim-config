@@ -110,7 +110,7 @@ cmp.setup {
     end,
   },
   sources = {
-    --{ name = "nvim_lsp" }, --when lsp is enabled ...
+    { name = "nvim_lsp" }, --when lsp is enabled ...
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },

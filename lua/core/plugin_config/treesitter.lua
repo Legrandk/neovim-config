@@ -10,3 +10,9 @@ require('nvim-treesitter.configs').setup {
   }
 }
 
+-- Code Folding
+-- set foldmethod=expr:while g do
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+vim.o.foldlevel = 20
+
